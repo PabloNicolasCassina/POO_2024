@@ -1,0 +1,1 @@
+Para utilizar este programa, en la linea 11 del main.cpp, en esta linea precisamente QPixmap imagen("C:/UBP/POO_2024/guia_2/ejercicio_12/hoja.jpg") debe cambiar lo que esta entre parentesis con la ruta de su archivo .jpg
