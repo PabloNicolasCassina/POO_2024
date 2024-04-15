@@ -1,4 +1,5 @@
 #include "login.h"
+#include "formulario.h"
 
 #include <QDebug>
 #include <QPainter>
@@ -56,7 +57,9 @@ void Login::slot_validarUsuario() {
     }
 
     if ((leUsuario->text() == "admin" && leClave->text() == "1234") || (leUsuario->text() == "nico" && leClave->text() == "1234")) {
-        qDebug() << "Usuario válido";
+        Formulario *formulario = new Formulario;
+        formulario->show();
+        this->close();
     } else {
         leClave->clear();
         intentosFallidos++;
